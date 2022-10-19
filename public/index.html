@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <style>
+      body {background-color: rgb(78, 88, 74);}
+      h1   {color: blue;}
+      h2    {color: blue;}
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ntp.fxcb3.xyz</title>
+  </head>
+  <body>
+
+    <h2 title="header">GPS Coordinated Time</h2>
+    <h1 id="time"></h1>
+    <h2 title="header">Root Domain Index</h2>
+
+    <a href="https://lilnasx.fxcb3.xyz">LilNasX</a> 
+    <a href="https://thewall.fxcb3.xyz">The Wall</a>
+    <a href="https://lilnasx.fxcb3.xyz:32400">Plex</a>
+    <a href="https://zoned.fxcb3.xyz/admin/login.jsp">Zoned</a>
+    <a href="https://micro.fxcb3.xyz">SuperMicro</a>
+    <a href="https://C6300.fxcb3.xyz">ISP</a>
+
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    let socket = io();
+    socket.on("message", function (msg) {
+      document.getElementById("time").innerHTML = "";
+      document.getElementById("time").innerHTML = msg;
+    });
+  </script>
+</html>

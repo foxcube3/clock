@@ -1,0 +1,26 @@
+{
+  "name": "server1",
+  "version": "0.0.3",
+  "description": "clock with site index",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua S. Doucette",
+  "license": "ISC",
+  "dependencies": {
+    "bufferutil": "^4.0.6",
+    "consolidate": "^0.16.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "html": "^1.0.0",
+    "mustache": "^4.2.0",
+    "socket.io": "^4.5.3",
+    "utf-8-validate": "^5.0.9"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.6",
+    "utf-8-validate": "^5.0.9"
+  }
+}
