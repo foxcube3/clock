@@ -21,7 +21,6 @@ io.on('connect', function (socket) {
     socket.on('disconnect', () => {
         console.log('user disconnected.')
     })
-
 })
 #// Serve primary HTML
 app.get('/', (req, res, next) => {
