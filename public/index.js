@@ -14,7 +14,7 @@ io.on('connect', function (socket) {
     console.log('a user is connected');
 #// Serve realtime serverside clock
     setInterval(function () {
-        let date = new Date().toLocaleTimeString()
+        const date = new Date().toLocaleTimeString()
         socket.send(date)
     }, 1000)
 #// Print server-side when user disconnects
